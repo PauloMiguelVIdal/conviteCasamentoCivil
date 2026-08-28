@@ -269,7 +269,7 @@ function PixModal({ onClose }: { onClose: () => void }) {
 function AudioPlayer() {
   const [isMuted, setIsMuted] = useState(false);
   const [volume, setVolume] = useState(0.7);
-  const [showVolumeSlider, setShowVolumeSlider] = useState(false);
+  const [setShowVolumeSlider] = useState(false);
 
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const initializedRef = useRef(false);

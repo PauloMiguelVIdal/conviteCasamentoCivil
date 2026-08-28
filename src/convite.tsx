@@ -316,31 +316,7 @@ function AudioPlayer() {
     };
   }, []);
 
-  // -------------------------------------------------------------------------
-  // ALTERAÇÃO DO VOLUME
-  // -------------------------------------------------------------------------
-  const handleVolumeChange = (
-    e: React.ChangeEvent<HTMLInputElement>
-  ) => {
-    const newVolume = parseFloat(e.target.value);
-
-    setVolume(newVolume);
-
-    if (!audioRef.current) return;
-
-    audioRef.current.volume = newVolume;
-
-    // Se o usuário colocar o slider em 0,
-    // consideramos como mute.
-    if (newVolume === 0) {
-      audioRef.current.muted = true;
-      setIsMuted(true);
-    } else {
-      audioRef.current.muted = false;
-      setIsMuted(false);
-    }
-  };
-
+ 
   // -------------------------------------------------------------------------
   // MUTE / UNMUTE
   // -------------------------------------------------------------------------
@@ -389,8 +365,6 @@ function AudioPlayer() {
     >
       <button
         onClick={toggleMute}
-        onMouseEnter={() => setShowVolumeSlider(true)}
-        onMouseLeave={() => setShowVolumeSlider(false)}
         style={{
           width: 40,
           height: 40,
@@ -413,52 +387,7 @@ function AudioPlayer() {
         )}
       </button>
 
-      {/* {showVolumeSlider && (
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          exit={{ opacity: 0, scale: 0.8 }}
-          style={{
-            background: "rgba(0,0,0,0.6)",
-            backdropFilter: "blur(6px)",
-            padding: "8px 4px",
-            borderRadius: 8,
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-          }}
-        >
-          <input
-            type="range"
-            min="0"
-            max="1"
-            step="0.01"
-            value={isMuted ? 0 : volume}
-            onChange={handleVolumeChange}
-            style={{
-              width: 100,
-              height: 4,
-              WebkitAppearance: "none",
-              appearance: "none",
-              background: "rgba(255,255,255,0.3)",
-              borderRadius: 2,
-              outline: "none",
-              cursor: "pointer",
-            }}
-          />
-
-          <div
-            style={{
-              fontSize: 10,
-              color: "rgba(255,255,255,0.6)",
-              fontFamily: "Montserrat",
-              marginTop: 4,
-            }}
-          >
-            {Math.round((isMuted ? 0 : volume) * 100)}%
-          </div>
-        </motion.div>
-      )} */}
+     
     </div>
   );
 }

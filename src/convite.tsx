@@ -4,11 +4,10 @@ import {
   MapPin,
   Gift,
   Users,
-  Shirt,
-  Gem,
+
   ChevronLeft,
   ChevronRight,
-  Music,
+
   Volume2,
   VolumeX,
   Heart,

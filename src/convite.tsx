@@ -445,7 +445,7 @@ export default function ConviteKarinaHugo() {
       label: "Confirmar presença",
       action: () => {
         const msg = encodeURIComponent(
-          "Olá! Confirmo minha presença no casamento de Karina e Hugo! 🎉"
+          "Olá! Confirmo minha presença no casamento de Karina e Hugo!"
         );
         window.open(`https://wa.me/5515997852923?text=${msg}`, "_blank");
       },

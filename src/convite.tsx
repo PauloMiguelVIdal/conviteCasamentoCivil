@@ -537,7 +537,7 @@ export default function ConviteKarinaHugo() {
           </p>
           <div style={{ width: 48, height: 1, background: "#C9A66B", margin: "0 auto 12px" }} />
           <p style={{ fontSize: 28, marginBottom: 4, fontFamily: "'Cormorant Garamond', serif" }}>
-            20 <span style={{ color: "#C9A66B" }}>|</span> 03 <span style={{ color: "#C9A66B" }}>|</span> 2027
+            16 <span style={{ color: "#C9A66B" }}>|</span> 01 <span style={{ color: "#C9A66B" }}>|</span> 2027
           </p>
           {/* <p style={{ fontSize: 10, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 8, fontFamily: "Montserrat" }}>
             Sábado, às 19h00

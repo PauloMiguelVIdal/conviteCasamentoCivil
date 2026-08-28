@@ -25,9 +25,9 @@ import musica from './assets/MUSICA/Edd_Sheeran_-_Perfect_(mp3.pm).mp3'
 // ---------------------------------------------------------------------------
 import primeira from "./assets/primeira.jpeg";
 import segunda from "./assets/segunda.jpeg";
-import terceira from "./assets/terceira.jpeg";
-import quarta from "./assets/quarta.jpeg";
-import quinta from "./assets/quinta.jpeg";
+import terceira from "./assets/Terceira.jpeg";
+import quarta from "./assets/Quarta.jpeg";
+import quinta from "./assets/Quinta.jpeg";
 
 const FONT_IMPORT = `
   @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Italiana&family=Montserrat:wght@300;400;500;600&display=swap');

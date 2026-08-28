@@ -529,9 +529,26 @@ export default function ConviteKarinaHugo() {
       id: "detalhes",
       color: "#4A3542",
       image: IMAGES.detalhes,
-      overlayLight: true,
+      overlayLight: false,
       content: (
-        <div style={{ position: "relative", zIndex: 10, textAlign: "center", padding: "0 24px", color: "#4A3542" }}>
+        <div
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            right: 0,
+            height: "33.333%",
+            zIndex: 10,
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+            textAlign: "center",
+            padding: "0 24px",
+            backgroundColor: 'white',
+            opacity:'90%'
+          }}
+        >
           <p style={{ fontSize: 10, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 4, fontFamily: "Montserrat" }}>
             A realizar-se no dia
           </p>
